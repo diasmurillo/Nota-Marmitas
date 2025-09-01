@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nota de Marmitas</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -23,35 +24,36 @@
       <div>
         <h3 class="text-lg font-semibold mb-2">Produto</h3>
         <div class="grid grid-cols-1 gap-3 md:grid-cols-4">
-          <!-- Nome do produto -->
-          <select id="produtoNome" onchange="preencherValor()"
-                  class="w-full col-span-1 md:col-span-2 border border-gray-300 rounded-lg px-3 py-2 shadow-sm focus:ring-2 focus:ring-orange-400 focus:outline-none">
-            <option value="Almôndega" data-valor="5.50">Almôndega de tofu</option>
-            <option value="Almôndega Bovina" data-valor="7.00">Almôndega Bovina</option>
-            <option value="Caril de frango" data-valor="6.50">Caril de frango</option>
-            <option value="Caril de Legumes" data-valor="5.50">Caril de legumes</option>
-            <option value="Lentilha" data-valor="5.50">Lentilha</option>
-            <option value="Peru" data-valor="6.50">Peru</option>
-            <option value="Strogonoff" data-valor="5.50">Strogonoff</option>
-            <option value="Strogonoff de Frango" data-valor="6.50">Strogonoff de frango</option>
-            <option value="Parmegiana" data-valor="5.50">Parmegiana</option>
-            <option value="Panqueca" data-valor="5.50">Panqueca</option>
-          </select>
+  <!-- Nome do produto -->
+  <select id="produtoNome" onchange="preencherValor()"
+          class="w-full md:col-span-2 border border-gray-300 rounded-lg px-3 py-2 shadow-sm focus:ring-2 focus:ring-orange-400 focus:outline-none">
+    <option value="Almôndega" data-valor="5.50">Almôndega de tofu</option>
+    <option value="Almôndega Bovina" data-valor="7.00">Almôndega Bovina</option>
+    <option value="Caril de frango" data-valor="6.50">Caril de frango</option>
+    <option value="Caril de Legumes" data-valor="5.50">Caril de legumes</option>
+    <option value="Lentilha" data-valor="5.50">Lentilha</option>
+    <option value="Peru" data-valor="6.50">Peru</option>
+    <option value="Strogonoff" data-valor="5.50">Strogonoff</option>
+    <option value="Strogonoff de Frango" data-valor="6.50">Strogonoff de frango</option>
+    <option value="Parmegiana" data-valor="5.50">Parmegiana</option>
+    <option value="Panqueca" data-valor="5.50">Panqueca</option>
+  </select>
 
-          <!-- Quantidade -->
-          <input id="produtoQtd" placeholder="Qtd" type="number"
-                class="w-full border border-gray-300 rounded-lg px-3 py-2 shadow-sm focus:ring-2 focus:ring-orange-400 focus:outline-none">
+  <!-- Quantidade -->
+  <input id="produtoQtd" placeholder="Qtd" type="number"
+        class="w-full md:col-span-1 border border-gray-300 rounded-lg px-3 py-2 shadow-sm focus:ring-2 focus:ring-orange-400 focus:outline-none">
 
-          <!-- Valor -->
-          <input id="produtoValor" placeholder="Valor (€)" type="number" step="0.01"
-                class="w-full border border-gray-300 rounded-lg px-3 py-2 shadow-sm focus:ring-2 focus:ring-orange-400 focus:outline-none">
+  <!-- Valor -->
+  <input id="produtoValor" placeholder="Valor (€)" type="number" step="0.01"
+        class="w-full md:col-span-1 border border-gray-300 rounded-lg px-3 py-2 shadow-sm focus:ring-2 focus:ring-orange-400 focus:outline-none">
 
-          <!-- Botão -->
-          <button onclick="adicionarProduto()" 
-                  class="w-full bg-orange-500 text-white font-medium rounded-lg shadow px-4 py-2 hover:bg-orange-600 transition">
-            +
-          </button>
-        </div>
+  <!-- Botão -->
+  <button onclick="adicionarProduto()" 
+          class="w-full md:col-span-1 bg-orange-500 text-white font-medium rounded-lg shadow px-4 py-2 hover:bg-orange-600 transition">
+    +
+  </button>
+</div>
+
       </div>
 
       <!-- Tabela -->
